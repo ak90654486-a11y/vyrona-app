@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+import '../features/splash/view/splash_screen.dart';
+
+class VyronaApp extends StatelessWidget {
+  const VyronaApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Vyrona',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.light,
+        colorSchemeSeed: Colors.blue,
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      home: const SplashScreen(),
+    );
+  }
+}
